@@ -41,3 +41,6 @@ data/  models/  images/  train_sign.ipynb  requirements.txt  README.md
 ## Reproducibilidad
 pip install -r requirements.txt
 Ejecutar `train_sign.ipynb` de arriba a abajo (semilla global = 42).
+  ![Curvas](images/curvas_mejor_modelo.png)
+  ![Matriz de confusión](images/matriz_confusion_test.png)
+  ![Ejemplos](images/ejemplos_clasificacion.png)
