@@ -12,11 +12,12 @@ Las personas con discapacidad auditiva enfrentan barreras de comunicación. Se b
 ## KPIs
 | KPI | Meta | Resultado |
 |---|---|---|
-| Accuracy en test | ≥ 80% | <X>% |
-| F1-Score macro en test | ≥ 75% | <Y> |
+| Accuracy en test | ≥ 80% | 77,6% (no cumplido) |
+| F1-Score macro en test | ≥ 75% | 0,763 (cumplido) |
 
 ## Fuentes de datos
-Sign Language MNIST (Kaggle). 27.455 imágenes de entrenamiento y 7.172 de test tras filtrar etiquetas válidas, 24 clases, 784 píxeles (28×28, escala de grises). Archivos en `data/`. Descarga: <URL de Kaggle>.
+Sign Language MNIST (Kaggle). 27.455 imágenes de entrenamiento y 7.172 de test tras filtrar etiquetas válidas, 24 clases, 784 píxeles (28×28, escala de grises). Archivos en `data/`. Descarga:
+ https://www.kaggle.com/datasets/datamunge/sign-language-mnist
 **Variante propia:** 50% del train con muestreo estratificado (semilla 42).
 
 ## Preparación y EDA
@@ -26,13 +27,13 @@ Sin nulos ni duplicados. Clases balanceadas. Normalización /255, one-hot, split
 1. Comprensión del negocio  2. Comprensión de los datos (EDA)  3. Preparación de datos  4. Modelado (3 MLP)  5. Evaluación (métricas, matriz de confusión, errores)  6. Conclusiones / despliegue futuro.
 
 ## Resultados
-| Modelo | Épocas | Val Loss | Val Acc |
-|---|---|---|---|
-| Baseline (128) | <> | <> | <> |
-| Profundo (256-128) | <> | <> | <> |
-| Profundo + Dropout | <> | <> | <> |
+| Modelo | Épocas | Val Loss | Val Acc | Test Acc |
+|---|---|---|---|---|
+| Baseline (128) | 30 | 0.411 | 87,9% | 67,0% |
+| Profundo (256-128) | 30 | 0.029 | 99,7% | 77,6% |
+| Profundo + Dropout | 30 | 0.396 | 89,0% | 69,8% |
 
-Mejor modelo: <NOMBRE>. Ver `images/` para curvas, matriz de confusión y ejemplos.
+Mejor modelo: Profundo (256-128), elegido por val_loss. Ver `images/` para curvas, matriz de confusión y ejemplos.
 
 ## Estructura del proyecto
 data/  models/  images/  train_sign.ipynb  requirements.txt  README.md
