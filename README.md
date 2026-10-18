@@ -16,8 +16,8 @@ Fijados antes de entrenar la variante y sin ajustarlos después de ver resultado
 
 | KPI | Meta | Resultado (test final) |
 |---|---|---|
-| Accuracy | ≥ 80% | 79,3% (no cumplido) |
-| F1-Score macro | ≥ 75% | 0,777 (cumplido) |
+| Accuracy | ≥ 80% | 79,4% (no cumplido) |
+| F1-Score macro | ≥ 75% | 0,784 (cumplido) |
 
 ## Fuentes de datos
 Sign Language MNIST (Kaggle). Archivos en `data/`. Descarga:
@@ -37,10 +37,10 @@ Sin nulos ni duplicados. El train está razonablemente balanceado (957 a 1.199 i
 | Modelo | Épocas | Val Loss | Val Acc | Test final Acc |
 |---|---|---|---|---|
 | Baseline (128) | 18 | 0.574 | 81,1% | 79,4% |
-| Profundo (256-128) | 15 | 0.722 | 81,4% | 81,5% |
-| Profundo + Dropout | 15 | 0.560 | 81,2% | 79,3% |
+| Profundo (256-128) | 17 | 0.709 | 84,0% | 83,4% |
+| Profundo + Dropout | 13 | 0.620 | 78,0% | 73,9% |
 
-Mejor modelo: Profundo + Dropout, elegido por val_loss en la validación (el test final no se usa para decidir). Las tres arquitecturas están empatadas en accuracy dentro del error esperable con ~1.000 imágenes (≈ 1,3 puntos). Las letras más difíciles son S (F1 0,54) y M (0,60). Ver `images/` para curvas, matriz de confusión y ejemplos.
+Mejor modelo: Baseline (128), elegido por val_loss en la validación (criterio definido de antemano; el test final no se usa para decidir). El Profundo tiene el mayor accuracy en validación y en test final, pero también el mayor val_loss. Las diferencias pequeñas entre arquitecturas son sensibles al ruido numérico de cada entorno. El modelo elegido sobreajusta (accuracy de entrenamiento 99,3% frente a 81,1% en validación). Las letras más difíciles son S (F1 0,51), M (0,70) y N (0,72). Ver `images/` para curvas, matriz de confusión y ejemplos.
 
 ## Estructura del proyecto
 data/  models/  images/  train_sign.ipynb  requirements.txt  README.md
