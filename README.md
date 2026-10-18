@@ -46,6 +46,8 @@ Mejor modelo: Baseline (128), elegido por val_loss en la validación (criterio d
 data/  models/  images/  train_sign.ipynb  requirements.txt  README.md
 
 ## Reproducibilidad
+Probado con Python 3.13 y las versiones de requirements.txt
+
 pip install -r requirements.txt
 Ejecutar `train_sign.ipynb` de arriba a abajo (semilla global = 42). Los resultados pueden variar levemente según la versión de TensorFlow y el hardware.
 
