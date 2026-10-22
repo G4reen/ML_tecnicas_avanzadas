@@ -73,7 +73,7 @@ README_EP2.md              este informe
 ```
 
 ## Reproducibilidad
-Probado con Python 3.12 y TensorFlow 2.21.0 (CPU), con las versiones de `requirements.txt`.
+Verificado con **Python 3.12** instalando exactamente las versiones de `requirements.txt` (resultados idénticos a los de este informe; solo varían los tiempos). `tensorflow==2.21.0` no tiene versión instalable en Python 3.14 o superior: usar Python 3.12 o 3.13.
 
 ```
 pip install -r requirements.txt
