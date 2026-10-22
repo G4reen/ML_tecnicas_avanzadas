@@ -3,7 +3,7 @@ Evaluación Parcial N°2 – TLY1101 Técnicas Avanzadas de Machine Learning I
 
 **Integrantes:** Bastian Sepulveda, Nicolas Bravo, Marcelo Obreque
 
-Continúa la Evaluación Parcial N°1 (MLP, ver `README.md` y `train_sign.ipynb`): se resuelve el **mismo problema, con el mismo dataset, variante, split y semilla**, con una Red Neuronal Convolucional (CNN) para compararla objetivamente con el MLP.
+Continúa la Evaluación Parcial N°1 (MLP, ver [`readmes/README_EP1.md`](readmes/README_EP1.md) y `train_sign.ipynb`): se resuelve el **mismo problema, con el mismo dataset, variante, split y semilla**, con una Red Neuronal Convolucional (CNN) para compararla objetivamente con el MLP.
 
 ## Descripción del problema de negocio
 Las personas con discapacidad auditiva enfrentan barreras de comunicación. Se busca un sistema de visión computacional que traduzca letras del alfabeto ASL a texto, facilitando la inclusión.
@@ -55,6 +55,7 @@ Conv2D(32, 3×3, ReLU, same) → MaxPool(2×2) → Conv2D(64, 3×3, ReLU, same) 
 - **Errores más frecuentes de la CNN:** S→M (13), S→E (11), M→S (10), M→N (10), N→A (9).
 - **Traslación horizontal (accuracy, 0/1/2/4 px):** MLP 79,4% / 63,7% / 42,1% / 20,9%; CNN 92,5% / 80,8% / 56,1% / 24,2%. La CNN mejora al MLP, pero **no es robusta a la traslación** (sin aumentación de datos y con `Flatten` + `Dense`).
 - **Grad-CAM:** zonas con sentido en T y M (pulgar), pero también activación en los bordes de la imagen en varias clases, lo que sugiere uso parcial del fondo o encuadre (no comprobado con un experimento específico).
+- **Frente al MLP Profundo (256-128)**, que en la EP1 tuvo el mayor accuracy en test final: 81,5% de accuracy y 0,796 de F1 macro en este entorno (la EP1 reportó 83,4%; las diferencias entre MLP pequeños son sensibles al entorno numérico). La CNN lo supera por 9 a 11 puntos con cualquiera de los dos valores.
 - El MLP se reentrenó en este notebook con la misma semilla y reproduce los resultados de la EP1. Los tiempos dependen del hardware y los resultados pueden variar levemente según la versión de TensorFlow.
 
 ## Limitaciones y mejoras
@@ -68,8 +69,8 @@ images/                    figuras (las de la EP2 empiezan con cnn_)
 train_sign.ipynb           EP1 (MLP)
 train_sign_cnn.ipynb       EP2 (CNN)
 requirements.txt
-README.md                  informe EP1
-README_EP2.md              este informe
+readmes/                   README_EP1.md (informe de la EP1)
+README.md                  este informe (EP2)
 ```
 
 ## Reproducibilidad
