@@ -3,7 +3,7 @@ Evaluación Parcial N°2 – TLY1101 Técnicas Avanzadas de Machine Learning I
 
 **Integrantes:** Bastian Sepulveda, Nicolas Bravo, Marcelo Obreque
 
-Continúa la Evaluación Parcial N°1 (MLP, ver [`readmes/README_EP1.md`](readmes/README_EP1.md) y `train_sign.ipynb`): se resuelve el **mismo problema, con el mismo dataset, variante, split y semilla**, con una Red Neuronal Convolucional (CNN) para compararla objetivamente con el MLP.
+Continúa la Evaluación Parcial N°1 (MLP, ver `train_sign.ipynb`; su informe está en el `README.md` de la rama `main`): se resuelve el **mismo problema, con el mismo dataset, variante, split y semilla**, con una Red Neuronal Convolucional (CNN) para compararla objetivamente con el MLP.
 
 ## Descripción del problema de negocio
 Las personas con discapacidad auditiva enfrentan barreras de comunicación. Se busca un sistema de visión computacional que traduzca letras del alfabeto ASL a texto, facilitando la inclusión.
@@ -69,7 +69,6 @@ images/                    figuras (las de la EP2 empiezan con cnn_)
 train_sign.ipynb           EP1 (MLP)
 train_sign_cnn.ipynb       EP2 (CNN)
 requirements.txt
-readmes/                   README_EP1.md (informe de la EP1)
 README.md                  este informe (EP2)
 ```
 
