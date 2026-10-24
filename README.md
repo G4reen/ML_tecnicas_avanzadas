@@ -77,7 +77,14 @@ README.md                  este informe (EP2)
 Verificado con **Python 3.12** instalando exactamente las versiones de `requirements.txt` (resultados idénticos a los de este informe; solo varían los tiempos). `tensorflow==2.21.0` no tiene versión instalable en Python 3.14 o superior: usar Python 3.12 o 3.13.
 
 ```
-pip install -r requirements.txt
+## Copiar y pegar todo
+
+pip install uv
+uv venv --python 3.12 .venv
+source .venv/bin/activate
+uv pip install -r requirements.txt ipykernel
+python -m ipykernel install --user --name ep2 --display-name "Python 3.12 (EP2)"
+
 ```
 Ejecutar `train_sign_cnn.ipynb` de arriba a abajo (semilla global = 42, ~2 min en CPU). El notebook reentrena el MLP Baseline para medir tiempos y carga `models/mejor_modelo_mlp.keras` como control.
 
