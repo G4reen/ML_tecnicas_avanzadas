@@ -73,7 +73,7 @@ README.md                  este informe (EP2)
 ```
 
 ## Reproducibilidad
-Verificado con **Python 3.12** instalando exactamente las versiones de `requirements.txt` (resultados idénticos a los de este informe; solo varían los tiempos). `tensorflow==2.21.0` no tiene versión instalable en Python 3.14 o superior: usar Python 3.12 o 3.13.
+Verificado con **Python 3.12** y las versiones exactas de `requirements.txt`. Los resultados de este informe provienen de una ejecución de referencia, y el modelo incluido en `models/` es el de esa ejecución. En otro equipo los resultados pueden variar alrededor de 1 punto porcentual (diferencias numéricas de CPU y librerías, aun con la misma semilla y versiones), sin cambiar las conclusiones. `tensorflow==2.21.0` no tiene versión instalable en Python 3.14 o superior: usar Python 3.12 o 3.13.
 
 ```
 ## Copiar y pegar todo
