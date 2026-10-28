@@ -1,7 +1,7 @@
 # Clasificación de letras de puño cerrado en lenguaje de señas (ASL) con CNN
-Evaluación Parcial N°2 – TLY1101 Técnicas Avanzadas de Machine Learning I
+Evaluación Parcial N°2 TLY1101 Técnicas Avanzadas de Machine Learning I
 
-**Integrantes:** Bastian Sepulveda, Nicolas Bravo, Marcelo Obreque
+**Integrantes:** Bastian Sepulveda, Nicolas Bravo, Marcelo Obreque.
 
 Continúa la Evaluación Parcial N°1 (MLP, ver `train_sign.ipynb`; su informe está en el `README.md` de la rama `main`): se resuelve el **mismo problema, con el mismo dataset, variante, split y semilla**, con una Red Neuronal Convolucional (CNN) para compararla objetivamente con el MLP.
 
