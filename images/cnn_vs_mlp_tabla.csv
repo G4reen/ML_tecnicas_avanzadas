@@ -1,0 +1,12 @@
+,MLP Baseline (128),MLP Profundo (256-128),CNN (32-64 + Dense 128)
+Parámetros,101254.0,234630.0,421126.0
+Épocas,18.0,15.0,9.0
+Tiempo (s),11.4,11.0,47.5
+Val Loss,0.574,0.722,0.277
+Val Acc,0.811,0.814,0.926
+Train Acc (mejor época),0.993,0.993,1.0
+Brecha train-val,0.182,0.179,0.073
+Test Acc,0.794,0.815,0.925
+Test Precision macro,0.782,0.796,0.92
+Test Recall macro,0.79,0.802,0.916
+Test F1 macro,0.784,0.796,0.917
