@@ -1,0 +1,14 @@
+,MLP base (128),CNN base (32-64 + Dense 128)
+Parámetros,101254.0,421126.0
+Épocas,18.0,9.0
+Época elegida,13.0,4.0
+Tiempo (s),8.5,45.1
+Val Loss,0.574,0.276
+Val Acc,0.811,0.921
+Train Acc,0.993,1.0
+Brecha train-val,0.182,0.079
+Test Acc,0.794,0.936
+Test Precision,0.782,0.932
+Test Recall,0.79,0.932
+Test F1,0.784,0.931
+Test ROC-AUC,0.95,0.993

@@ -1,0 +1,29 @@
+{
+  "mlp": {
+    "units": [
+      256
+    ],
+    "lr": 0.0003,
+    "dropout": 0.3,
+    "l2": 0.0,
+    "batch_norm": false
+  },
+  "cnn": {
+    "filters": [
+      32,
+      64
+    ],
+    "dense_units": 128,
+    "lr": 0.001,
+    "dropout": 0.3,
+    "l2": 0.0001,
+    "batch_norm": true,
+    "augment": {
+      "translation": 0.1,
+      "rotation": 0.05,
+      "zoom": 0.1
+    }
+  },
+  "semilla": 42,
+  "epochs_cnn": 40
+}
