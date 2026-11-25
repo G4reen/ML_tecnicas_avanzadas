@@ -1,0 +1,14 @@
+,MLP optimizada,CNN optimizada
+Accuracy (test),0.801,1.000
+Precision macro (test),0.788,1.000
+Recall macro (test),0.786,1.000
+F1 macro (test),0.784,1.000
+ROC-AUC (test),0.955,1.000
+Accuracy (validación),0.828,1.000
+Brecha train-val,0.143,-0.075
+Parámetros,"202,502","421,414"
+Épocas,26,30
+Tiempo de entrenamiento (s),12.7,254.4
+Accuracy con traslación 2 px,0.442,0.931
+Accuracy con traslación 4 px,0.211,0.813
+Explicabilidad,SHAP: disperso y ruidoso,"Grad-CAM: legible, pero atiende bordes y fondo"
